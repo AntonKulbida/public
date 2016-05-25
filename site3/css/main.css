@@ -1,11 +1,3 @@
-// * {
-//   box-sizing: border-box;
-//   margin: 0;
-//   padding: 0;
-// }
-// a {
-//   text-decoration: none;
-// }
 a:link {
   color: #fff;
 }
@@ -48,7 +40,7 @@ a.active {
   border-radius: 3px;
   color: #fff;
 }
-.main-vestibulum {
+.main-img {
   height: 500px;
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
@@ -56,14 +48,14 @@ a.active {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
 }
-.main-vestibulum .vestibulum {
+.main-img .img {
   width: 100%;
   background: url(../img/serifs-top.png);
   background-repeat: repeat-x;
   color: #fff;
   padding-top: 150px;
 }
-.main-vestibulum .vestibulum h2 {
+.main-img .img h2 {
   font-weight: bolder;
   font-size: 36px;
   letter-spacing: -2px;
@@ -71,7 +63,7 @@ a.active {
   border-radius: 3px;
   height: 40px;
 }
-.main-vestibulum .vestibulum p {
+.main-img .img p {
   padding: 10px 40px;
   background-color: #3f4646;
   border-radius: 3px;
@@ -138,7 +130,7 @@ a.active {
   box-shadow: 2px 2px 0px 0px #e8645a;
   background: #e8645a;
 }
-.main-body .middle1 {
+.main-body .nav1 {
   margin-top: 100px;
   width: 100%;
   height: 350px;
@@ -146,7 +138,7 @@ a.active {
   background-repeat: repeat-x;
   background-color: #ececec;
 }
-.main-body .middle1 h2 {
+.main-body .nav1 h2 {
   padding-top: 70px;
   font-weight: 600;
   color: #e8645a;
@@ -166,48 +158,48 @@ a.active {
   width: 250px;
   height: auto;
 }
-.main-body .middle2 {
+.main-body .nav2 {
   line-height: 28px;
 }
-.main-body .middle2 h4 {
+.main-body .nav2 h4 {
   padding-top: 50px;
   font-weight: bolder;
   padding-bottom: 40px;
   padding-left: 46px;
 }
-.main-body .middle2 li {
+.main-body .nav2 li {
   list-style: none;
 }
-.main-body .middle2 a {
+.main-body .nav2 a {
   color: #e8645a;
 }
-.main-body .middle2 p {
+.main-body .nav2 p {
   padding-top: 50px;
 }
-.main-body .middle2 .fa {
+.main-body .nav2 .fa {
   color: #e8645a;
 }
-.main-body .middle2 img {
+.main-body .nav2 img {
   padding-top: 80px;
 }
-.main-body .middle2 h5 {
+.main-body .nav2 h5 {
   font-weight: bolder;
   padding-top: 10px;
   padding-left: 10px;
 }
-.main-body .middle2 .comment .images {
+.main-body .nav2 .comment .images {
   position: relative;
   width: 250px;
 }
-.main-body .middle2 .comment img {
+.main-body .nav2 .comment img {
   padding: 0;
   margin: 0;
 }
-.main-body .middle2 .comment p {
+.main-body .nav2 .comment p {
   font-weight: bolder;
   padding: 0;
 }
-.main-body .middle2 .comment .text p {
+.main-body .nav2 .comment .text p {
   position: absolute;
   top: 15px;
   margin-left: 20px;
@@ -215,28 +207,28 @@ a.active {
   font-weight: 300;
   line-height: 16px;
 }
-.main-body .middle2 .clients h5 {
+.main-body .nav2 .clients h5 {
   padding-top: 45px;
   font-weight: bold;
 }
-.main-body .middle2 .clients hr {
+.main-body .nav2 .clients hr {
   margin-top: 65px;
   border: 1px solid lightgrey;
 }
-.main-body .middle2 .clients .fa {
+.main-body .nav2 .clients .fa {
   margin-top: 47px;
 }
-.main-body .middle2 .clients .fa:hover {
+.main-body .nav2 .clients .fa:hover {
   color: lightblue;
   opacity: .5;
 }
-.main-body .middle2 .jquery img {
+.main-body .nav2 .jquery img {
   padding: 0;
   margin-top: 20px;
   margin-left: 15px;
   margin-bottom: 50px;
 }
-.main-body .middle2 .jquery img:hover {
+.main-body .nav2 .jquery img:hover {
   background-color: #fff;
   box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
@@ -332,6 +324,9 @@ a.active {
   width: 35% !important;
   height: auto;
 }
+.main-body .middle .col1 {
+  margin-top: 15px ;
+}
 }
 @media (max-width: 992px) {
   .main-body {
@@ -347,4 +342,5 @@ a.active {
   width: 90% !important;
   height: auto;
 }
+
 }
