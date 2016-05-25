@@ -1,11 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-}
 .main-header {
   position: relative;
   z-index: 2;
@@ -33,7 +25,7 @@ a {
   font-family: "ProximaNova Light";
   font-size: 22px;
   border: 1px solid #fff;
-  padding: 15px 0px;
+  padding: 15px 0;
 }
 .main-header .header h5:hover {
   transform: scale(1.1, 1.1);
@@ -44,41 +36,41 @@ a {
 .main-header .header h5 .fa {
   padding-left: 10px;
 }
-.yellow-tablet {
+.page-middle {
   width: 100%;
   z-index: 3;
   position: absolute;
-  background: url(../img/body.png);
+  background: url("../img/bgtablet.png");
   background-size: cover;
-  height: 600px;
+  height: 650px;
 }
-.yellow-tablet .tablet {
+.page-middle .middle {
   padding-left: 50px;
   margin-top: 150px;
   color: #545454;
   font-family: "ProximaNova Light";
 }
-.yellow-tablet .tablet h2 {
+.page-middle .middle h2 {
   font-weight: 500;
   font-size: 40px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
-.yellow-tablet .tablet p {
+.page-middle .middle p {
   padding-top: 10px;
   max-width: 450px;
   font-weight: 600;
 }
-.yellow-tablet .tablet img {
+.page-middle .middle img {
   padding-top: 10px;
   height: 70px;
   float: left;
 }
-.yellow-tablet .tablet .text {
+.page-middle .middle .text {
   font-family: "ProximaNova RegularIt";
   padding-left: 15px;
   font-weight: 300;
 }
-.yellow-tablet .tablet h4 {
+.page-middle .middle h4 {
   font-weight: bolder;
   color: #14af8f;
   font-size: 14px;
@@ -86,13 +78,13 @@ a {
   border: 2px solid #14af8f;
   margin-top: 50px;
 }
-.yellow-tablet .tablet h4:hover {
+.page-middle .middle h4:hover {
   transform: scale(1.1, 1.1);
   cursor: pointer;
   color: #4eacdd;
   border-color: #4eacdd;
 }
-.yellow-tablet .tablet h4 .fa {
+.page-middle .middle h4 .fa {
   padding-left: 10px;
 }
 .main-body {
@@ -137,21 +129,21 @@ a {
   right: 500px;
   top: 290px;
 }
-.main-green {
+.page-green {
   position: relative;
   z-index: 5;
   width: 100%;
   height: 350px;
-  background: url(../img/purple.png);
+  background: url("../img/footer.png");
   background-size: cover;
   color: #fff;
 }
-.main-green h1 {
+.page-green h1 {
   padding-top: 80px;
   font-size: 45px;
   font-family: "ProximaNova Regular";
 }
-.main-green h4 {
+.page-green h4 {
   color: #fff;
   font-size: 14px;
   margin: 70px;
@@ -159,11 +151,11 @@ a {
   border: 2px solid #fff;
   margin-top: 50px;
 }
-.main-green h4:hover {
+.page-green h4:hover {
   transform: scale(1.1, 1.1);
   cursor: pointer;
 }
-.main-green h4 .fa {
+.page-green h4 .fa {
   padding-left: 10px;
 }
 .main-footer {
@@ -183,10 +175,10 @@ a {
 .main-footer .footer .img {
   display: inline-block;
   position: relative;
-  margin: 195px 0 50px 20px;
+  margin: 195px 0 50px;
 }
 .main-footer .footer .img:hover {
-  opacity: .3;
+  opacity: 0.3;
   cursor: pointer;
 }
 .main-footer .footer .img i {
@@ -196,7 +188,7 @@ a {
 }
 .main-footer .footer p {
   padding-top: 5px;
-  padding-left: 45px;
+  padding-left: 40px;
   font-size: 20px;
   font-family: "ProximaNova SemiboldIt";
 }
@@ -205,7 +197,7 @@ a {
   padding: 15px;
 }
 .main-footer .footer button {
-  border-radius: 10px;
+  border-radius: 11px;
 }
 .footer2 {
   width: 100%;
@@ -221,11 +213,11 @@ a {
   text-decoration: none;
 }
 .footer2 .arrow {
-  padding-top: 30px;
+  padding-top: 31px;
 }
 .footer2 .arrow a {
   color: #a4a4a4;
 }
 .footer2 .arrow a:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
