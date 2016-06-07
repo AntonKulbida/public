@@ -7,227 +7,535 @@ a:visited {
 a:active {
     color: #fff;
 }
-a:hover{
-	color: #fff;
+a:hover {
+    color: #fff;
 }
-.main-logo{
-	background-image: url("../img/Circles.png");
-	background-size: cover;
-	background-position: 50% 0%;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 875px;
-	font-family: 'Ubuntu', sans-serif;
-	padding-top: 50px;
+.main-logo {
+    background-image: url("../img/Circles.png");
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 875px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 49px;
 
-		.btn{
-			padding: 5px 10px;
-			background-color: #243173;
-			color: #fff;
-			border-radius: 20px;
-				&:hover{
-					color: #fff;
-					background-color: #243173;
-				}
-			span{
-				margin-left: 30px;
-			}
-		}
+    .btn {
+        padding: 5px 15px;
+        background-color: #243173;
+        color: #fff;
+        border-radius: 20px;
+        border: 1px solid;
+        &:hover {
+            color: #fff;
+            background-color: #243173;
+        }
+        span {
+            margin-left: 40px;
+        }
+    }
 
-.social-networking{
-		.networking{
-			ul {
-				margin-top: 50px;
-				color: #fff;
-				list-style: none;
-				a{
-					color: #fff;
-				}
-					li{
-						display: inline-block;
-						margin-left: 40px;
-						width: 200px;
-						border-radius: 25px;
-						padding: 13px 20px;
-							&:hover{
-								box-shadow: 1px 2px 2px 2px rgba(0,0,0,.5);
-							}
-							.fa{
-								margin-right: 20px;
-							}
-					}
-				}
-				}
-			}
-		.text{
-			margin-top: 50px;
-			color: #eaebf0;
-			font-size: 16px;
-			line-height: 32px;
-		}
-		.sysmobile{
-			margin-top: 90px;
-			.img1{
-				img{
-					margin-top: 50px;
-					width: 116px;
-					height: auto;
-				}
-			}
-			.img2{
-				img{
-					width: 130px;
-					height: auto;
-					&:hover{
-					opacity: .5;
-				}
-				}
-			}
-			.img3{
-				img{
-					margin-top: 50px;
-					margin-left: 40px;
-					width: 130px;
-					height: auto;
-					&:hover{
-					opacity: .5;
-				}
-				}
-			}
-		}
+    .social-networking {
+        .networking {
+            ul {
+                margin-top: 50px;
+                color: #fff;
+                list-style: none;
+                a {
+                    color: #fff;
+                }
+                li {
+                    display: inline-block;
+                    margin-left: 40px;
+                    width: 200px;
+                    border-radius: 25px;
+                    padding: 13px 20px;
+                    &:hover {
+                        box-shadow: 1px 2px 2px 2px rgba(0,0,0,.5);
+                    }
+                    .fa {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .text {
+        margin-top: 50px;
+        color: #eaebf0;
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .sysmobile {
+        // border: 1px solid;
+        // position: absolute;
+        // z-index: 99;
+        margin-top: 90px;
+        .img1 {
+            img {
+                margin-top: 50px;
+                width: 116px;
+                height: auto;
+            }
+        }
+        .img2 {
+            img {
+                margin-left: 20px;
+                width: 130px;
+                height: auto;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+        .img3 {
+            img {
+                margin-top: 50px;
+                margin-left: 40px;
+                width: 130px;
+                height: auto;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
 
-		.mobile{
-				img{
-					margin-top: -10px;
-					width: 90%;
-				}
-			}
-		}
+    .mobile {
 
-	.main-bottom{
-		// position: absolute;
-		// top: 875px;
-		position: relative;
-		z-index: 5;
-		top: 0;
-		padding-top: 50px ;
-		background-color: #242f64;
-		width: 100%;
-		height: auto;
-		font-family: 'Ubuntu', sans-serif;
-		.bottom{
-			h3{
-				color: #ffffff;
+        img {
+            margin-top: -10px;
+            width: 90%;
+        }
+        .nokia {
+            position: absolute;
+            z-index: 1;
+            left: 200px;
+            width: 100%;
+            top: 50px;
+            p {
+                position: relative;
+                z-index: 3;
+                bottom: 360px;
+                right: 15px;
+                text-transform: uppercase;
+                font-size: 24px;
+                color: #fff;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+        .nexus {
+            position: absolute;
+            z-index: 2;
+            width: 92%;
+            left: 60px;
+        }
 
-			}
-		}
-		.skills{
-			padding-top: 70px;
-			color: #eaebf0;
-			img{
-				width: 170px;
-				height: auto;
-					&:hover{
-						transform: scale(1.1,1.1);
-            cursor: pointer;
-					}
-			}
-			h3{
-				padding-top: 20px;
-				font-weight: 500;
-				letter-spacing: 1px;
-			}
-			p{
-				padding-top: 10px;
-				margin-bottom: 55px;
-			}
-		}
-	}
-	.main-footer{
-		font-family: 'Ubuntu', sans-serif;
-		background-color: #303f84;
-		padding: 15px 15px;
-		&:hover{
-					opacity: .8;
-					cursor: pointer;
+        // =========coming soon nexus================================
+        // 		.nexus{
+        // 				position: absolute;
+        // 				z-index: 2;
+        // 				width: 92%;
+        // 				left: 60px;
+        // 				img{
+        // 					opacity: .7;
+        // 				}
+        // 		p{
+        // 				position: relative;
+        // 				z-index: 3;
+        // 				top: 120px;
+        // 				left: 35px;
+        // 				text-transform: uppercase;
+        // 				font-size: 26px;
+        // 				color: #fff;
+        // 				font-family: 'Ubuntu', sans-serif;
+        // 				font-weight: bold;
+        // 				text-align: center;
+        // 			}
+        // }
+    }
+    .iphone {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        right: 25px;
+        top: 50px;
+    }
 
-				}
-		h5{
-			color: #eaebf0;
-			letter-spacing: 1px;
+    // =========coming soon iphone================================
+    // 	.iphone{
+    // 			position: absolute;
+    // 		z-index: 1;
+    // 		width: 100%;
+    // 		right: 25px;
+    // 		top:50px;
+    // 			img{
+    // 				opacity: .7;
+    // 			}
+    // 		p{
+    // 			position: relative;
+    // 			z-index: 3;
+    // 			bottom: 470px;
+    // 			right: 20px;
+    // 			text-transform: uppercase;
+    // 			font-size: 26px;
+    // 			color: #fff;
+    // 			font-family: 'Ubuntu', sans-serif;
+    // 			font-weight: bold;
+    // 			text-align: center;
+    // 		}
+    // 	}
+    // }
+}
 
-		}
-	}
+.main-bottom {
+    position: relative;
+    z-index: 5;
+    top: 0;
+    padding-top: 50px;
+    background-color: #242f64;
+    width: 100%;
+    height: auto;
+    font-family: 'Ubuntu', sans-serif;
+    .bottom {
+        h2 {
+            color: #ffffff;
 
+        }
+    }
+    .skills {
+        padding-top: 70px;
+        color: #eaebf0;
+        img {
+            width: 170px;
+            height: auto;
+            &:hover {
+                transform: scale(1.1,1.1);
+                cursor: pointer;
+            }
+        }
+        h3 {
+            padding-top: 20px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        p {
+            padding-top: 10px;
+            font-size: 18px;
+            margin-bottom: 55px;
+        }
+    }
+}
+.main-footer {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #303f84;
+    padding: 5px;
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+
+    }
+    h5 {
+        color: #eaebf0;
+        letter-spacing: 1px;
+
+    }
+}
 
 // ======================================================
 // ======================================================
 // ======================================================
 @media (max-width:1200px) {
     .networking {
-    	li {
-    	margin-top: 10px;
+        li {
+            margin-top: 10px;
+        }
+        .sysmobile {
+            .img3 {
+                img {
+                    margin-left: 0 !important;
+                }
+            }
+        }
     }
-    .sysmobile{
-    	.img3{
-    		img{
-    			margin-left: 0 !important;
-    		}
-    	}
+    .nokia {
+        position: absolute;
+        z-index: 1;
+        left: 190px;
+        top: 50px;
+        // p{
+        // 	bottom: 300px !important;
+        // }
     }
-  }
+    .nexus {
+        position: absolute;
+        z-index: 2;
+        left: 65px !important;
+
+        // =========coming soon================================
+        // p{
+        // 	padding-left: 30px;
+        // }
+    }
+    .iphone {
+        position: absolute;
+        z-index: 1;
+        left: 10px !important;
+        top: 50px;
+
+        // =========coming soon================================
+        // p{
+        // 	bottom: 400px !important;
+        // }
+    }
 }
 @media (max-width:992px) {
     .networking li {
-    	margin-left: 0 !important;
+        margin-left: 0 !important;
     }
-    .mobile{
-		img{
-			margin-left: 30px !important;
-		}
-   }
-}
-@media (max-width:768px) {
-	.text{
-		p{
 
-			}
-	}
-	.sysmobile{
-			margin-top: 25px !important;
-    	.img1{
-    		img{
-    			margin-left: 30px !important;
-    		}
-    	}
+    .mobile {
+        margin-left: 30px !important;
+        .nokia {
+            position: absolute;
+            z-index: 1;
+            left: 100px !important;
+            top: 50px;
+            p {
+                bottom: 230px !important;
+                font-size: 20px !important;
+            }
+        }
+        .nexus {
+            position: absolute;
+            z-index: 2;
+            left: 30px !important;
+
+            // =========coming soon================================
+            // p{
+            // 	padding-right: 50px;
+            // 	top: 80px !important;
+            // 	font-size: 22px ;
+            // }
+        }
+        .iphone {
+            position: absolute;
+            z-index: 1;
+            left: -30px !important;
+            top: 50px;
+
+            // =========coming soon================================
+            // p{
+            // 	bottom: 300px !important;
+            // 	font-size: 20px !important;
+            // }
+        }
+    }
+}
+@media (max-width:767px) {
+    .text {
+        p {
+            font-size: 16px;
+        }
+    }
+    .sysmobile {
+        margin-top: 25px !important;
+        .img1 {
+            img {
+                margin-left: 90px !important;
+            }
+        }
+        .img2 {
+            img {
+                margin-left: 55px !important;
+            }
+        }
+        .img3 {
+            img {
+                margin-left: 110px !important;
+            }
+        }
+    }
+    .mobile {
+        margin-left: 0 !important;
+    }
+    .nokia {
+        position: absolute;
+        z-index: 1;
+        left: 190px;
+        top: 30px !important;
+        p {
+            top: -185px !important;
+            font-size: 16px !important;
+        }
+    }
+    .nexus {
+        position: absolute;
+        z-index: 2;
+        padding-left: -10px;
+
+        // =========coming soon================================
+        // p{
+        // 	padding-right: 50px;
+        // 	font-size: 16px !important;
+        // }
+    }
+    .iphone {
+        position: absolute;
+        z-index: 1 !important;
+        margin-top: -40px !important;
+        top: 70px !important;
+
+        // =========coming soon================================
+        // p{
+        // 	margin-left: 45px;
+        // 	margin-top: 65px !important;
+        // 	font-size: 20px !important;
+        // }
+    }
+}
+@media (max-width:550px) {
+    .text {
+        p {
+            margin-top: -25px !important;
+        }
+    }
+    .sysmobile {
+        .img1 {
+            img {
+                margin-top: -20px !important;
+                margin-left: 30px !important;
+                width: 60px !important;
+            }
+        }
+        .img2 {
+            img {
+                margin-top: -50px;
+                width: 90px !important;
+                margin-left: 20px !important;
+            }
+        }
+        .img3 {
+            img {
+                margin-left: 85px !important;
+                margin-top: -20px !important;
+                width: 80px !important;
+            }
+        }
+        .main-mobile {
+            .nokia {
+                position: absolute;
+                z-index: 1;
+                left: 40px !important;
+                top: 75px !important;
+
+                p {
+                    top: -150px !important;
+                    right: 10px !important;
+                    font-size: 12px !important;
+                }
+            }
+            .nexus {
+                position: absolute;
+                z-index: 2;
+                left: 5px !important;
+                top: 10px;
+                width: 100%;
+
+                // =========coming soon================================
+                // p{
+                // 	left: 15px !important;
+                // 	top: 50px !important;
+                // 	font-size: 18px !important;
+                // 	text-align: center;
+                // }
+            }
+            .iphone {
+                position: absolute;
+                z-index: 1 !important;
+                left: -20px !important;
+                top: 110px !important;
+
+                // =========coming soon================================
+                // 	p{
+                // 	margin-top: 116px !important;
+                // 	right: 30px;
+                // 	font-size: 12px !important;
+                // }
+            }
+        }
     }
 }
 @media (max-width:420px) {
-		.text{
-			p{
-				margin-top: -25px !important;
-			}
-		}
-	.sysmobile{
-		.img1{
-			img{
-				margin-top: 0px !important;
-				margin-left: 30px;
-    			width: 80px !important;
-    		}
-    	}
-    	.img2{
-			img{
-				margin-top: -60px;
-    			width: 80px !important;
-    		}
-    	}
-    	.img3{
-    		img{
-    			margin-left: 25px !important;
-    			margin-top: 0px !important;
-    			width: 90px !important;
-    		}
-    	}
+    .text {
+        p {
+            margin-top: -25px !important;
+        }
+    }
+    .sysmobile {
+        .img1 {
+            img {
+                margin-top: -70px !important;
+                margin-left: 30px !important;
+                width: 60px !important;
+            }
+        }
+        .img2 {
+            img {
+                margin-top: -70px;
+                width: 80px !important;
+                margin-left: 0 !important;
+            }
+        }
+        .img3 {
+            img {
+                margin-left: 35px !important;
+                margin-top: -70px !important;
+                width: 80px !important;
+            }
+        }
+        .main-mobile {
+            .nokia {
+                position: absolute;
+                z-index: 1;
+                left: 40px !important;
+                top: 40px !important;
+                p {
+                    top: -110px !important;
+                    right: 10px !important;
+                    font-size: 12px !important;
+                }
+            }
+            .nexus {
+                position: absolute;
+                z-index: 2;
+                left: 5px !important;
+                top: 0;
+                width: 100%;
+
+                // =========coming soon================================
+                // p{
+                // 	left: 15px !important;
+                // 	top: 50px !important;
+                // 	font-size: 18px !important;
+                // 	text-align: center;
+                // }
+            }
+            .iphone {
+                position: absolute;
+                z-index: 1 !important;
+                left: -20px !important;
+                top: 80px !important;
+
+                // =========coming soon================================
+                // 	p{
+                // 	margin-top: 156px !important;
+                // 	right: 30px;
+                // 	font-size: 12px !important;
+                // }
+            }
+        }
     }
 }

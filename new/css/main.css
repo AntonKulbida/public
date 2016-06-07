@@ -13,25 +13,26 @@ a:hover {
 .main-logo {
   background-image: url("../img/Circles.png");
   background-size: cover;
-  background-position: 50% 0%;
+  background-position: 50% 0;
   background-repeat: no-repeat;
   width: 100%;
   height: 875px;
   font-family: 'Ubuntu', sans-serif;
-  padding-top: 50px;
+  padding-top: 49px;
 }
 .main-logo .btn {
-  padding: 5px 10px;
+  padding: 5px 15px;
   background-color: #243173;
   color: #fff;
   border-radius: 20px;
+  border: 1px solid;
 }
 .main-logo .btn:hover {
   color: #fff;
   background-color: #243173;
 }
 .main-logo .btn span {
-  margin-left: 30px;
+  margin-left: 40px;
 }
 .main-logo .social-networking .networking ul {
   margin-top: 50px;
@@ -57,7 +58,7 @@ a:hover {
 .main-logo .text {
   margin-top: 50px;
   color: #eaebf0;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
 }
 .main-logo .sysmobile {
@@ -69,11 +70,12 @@ a:hover {
   height: auto;
 }
 .main-logo .sysmobile .img2 img {
+  margin-left: 20px;
   width: 130px;
   height: auto;
 }
 .main-logo .sysmobile .img2 img:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .main-logo .sysmobile .img3 img {
   margin-top: 50px;
@@ -82,23 +84,55 @@ a:hover {
   height: auto;
 }
 .main-logo .sysmobile .img3 img:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .main-logo .mobile img {
   margin-top: -10px;
   width: 90%;
 }
+.main-logo .mobile .nokia {
+  position: absolute;
+  z-index: 1;
+  left: 200px;
+  width: 100%;
+  top: 50px;
+}
+.main-logo .mobile .nokia p {
+  position: relative;
+  z-index: 3;
+  bottom: 360px;
+  right: 15px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.main-logo .mobile .nexus {
+  position: absolute;
+  z-index: 2;
+  width: 92%;
+  left: 60px;
+}
+.main-logo .iphone {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  right: 25px;
+  top: 50px;
+}
 .main-bottom {
   position: relative;
   z-index: 5;
   top: 0;
-  padding-top: 50px ;
+  padding-top: 50px;
   background-color: #242f64;
   width: 100%;
   height: auto;
   font-family: 'Ubuntu', sans-serif;
 }
-.main-bottom .bottom h3 {
+.main-bottom .bottom h2 {
   color: #ffffff;
 }
 .main-bottom .skills {
@@ -120,15 +154,16 @@ a:hover {
 }
 .main-bottom .skills p {
   padding-top: 10px;
+  font-size: 18px;
   margin-bottom: 55px;
 }
 .main-footer {
   font-family: 'Ubuntu', sans-serif;
   background-color: #303f84;
-  padding: 15px 15px;
+  padding: 5px;
 }
 .main-footer:hover {
-  opacity: .8;
+  opacity: 0.8;
   cursor: pointer;
 }
 .main-footer h5 {
@@ -142,21 +177,136 @@ a:hover {
   .networking .sysmobile .img3 img {
     margin-left: 0 !important;
   }
+  .nokia {
+    position: absolute;
+    z-index: 1;
+    left: 190px;
+    top: 50px;
+  }
+  .nexus {
+    position: absolute;
+    z-index: 2;
+    left: 65px !important;
+  }
+  .iphone {
+    position: absolute;
+    z-index: 1;
+    left: 10px !important;
+    top: 50px;
+  }
 }
 @media (max-width: 992px) {
   .networking li {
     margin-left: 0 !important;
   }
-  .mobile img {
+  .mobile {
     margin-left: 30px !important;
   }
+  .mobile .nokia {
+    position: absolute;
+    z-index: 1;
+    left: 100px !important;
+    top: 50px;
+  }
+  .mobile .nokia p {
+    bottom: 230px !important;
+    font-size: 20px !important;
+  }
+  .mobile .nexus {
+    position: absolute;
+    z-index: 2;
+    left: 30px !important;
+  }
+  .mobile .iphone {
+    position: absolute;
+    z-index: 1;
+    left: -30px !important;
+    top: 50px;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .text p {
+    font-size: 16px;
+  }
   .sysmobile {
     margin-top: 25px !important;
   }
   .sysmobile .img1 img {
+    margin-left: 90px !important;
+  }
+  .sysmobile .img2 img {
+    margin-left: 55px !important;
+  }
+  .sysmobile .img3 img {
+    margin-left: 110px !important;
+  }
+  .mobile {
+    margin-left: 0 !important;
+  }
+  .nokia {
+    position: absolute;
+    z-index: 1;
+    left: 190px;
+    top: 30px !important;
+  }
+  .nokia p {
+    top: -185px !important;
+    font-size: 16px !important;
+  }
+  .nexus {
+    position: absolute;
+    z-index: 2;
+    padding-left: -10px;
+  }
+  .iphone {
+    position: absolute;
+    z-index: 1 !important;
+    margin-top: -40px !important;
+    top: 70px !important;
+  }
+}
+@media (max-width: 550px) {
+  .text p {
+    margin-top: -25px !important;
+  }
+  .sysmobile .img1 img {
+    margin-top: -20px !important;
     margin-left: 30px !important;
+    width: 60px !important;
+  }
+  .sysmobile .img2 img {
+    margin-top: -50px;
+    width: 90px !important;
+    margin-left: 20px !important;
+  }
+  .sysmobile .img3 img {
+    margin-left: 85px !important;
+    margin-top: -20px !important;
+    width: 80px !important;
+  }
+  .sysmobile .main-mobile .nokia {
+    position: absolute;
+    z-index: 1;
+    left: 40px !important;
+    top: 75px !important;
+  }
+  .sysmobile .main-mobile .nokia p {
+    top: -150px !important;
+    right: 10px !important;
+    font-size: 12px !important;
+  }
+  .sysmobile .main-mobile .nexus {
+    position: absolute;
+    z-index: 2;
+    left: 5px !important;
+    top: 10px;
+    width: 100%;
+  }
+  .sysmobile .main-mobile .iphone {
+    position: absolute;
+    z-index: 1 !important;
+    left: -20px !important;
+    top: 110px !important;
   }
 }
 @media (max-width: 420px) {
@@ -164,17 +314,42 @@ a:hover {
     margin-top: -25px !important;
   }
   .sysmobile .img1 img {
-    margin-top: 0px !important;
-    margin-left: 30px;
-    width: 80px !important;
+    margin-top: -70px !important;
+    margin-left: 30px !important;
+    width: 60px !important;
   }
   .sysmobile .img2 img {
-    margin-top: -60px;
+    margin-top: -70px;
     width: 80px !important;
+    margin-left: 0 !important;
   }
   .sysmobile .img3 img {
-    margin-left: 25px !important;
-    margin-top: 0px !important;
-    width: 90px !important;
+    margin-left: 35px !important;
+    margin-top: -70px !important;
+    width: 80px !important;
+  }
+  .sysmobile .main-mobile .nokia {
+    position: absolute;
+    z-index: 1;
+    left: 40px !important;
+    top: 40px !important;
+  }
+  .sysmobile .main-mobile .nokia p {
+    top: -110px !important;
+    right: 10px !important;
+    font-size: 12px !important;
+  }
+  .sysmobile .main-mobile .nexus {
+    position: absolute;
+    z-index: 2;
+    left: 5px !important;
+    top: 0;
+    width: 100%;
+  }
+  .sysmobile .main-mobile .iphone {
+    position: absolute;
+    z-index: 1 !important;
+    left: -20px !important;
+    top: 80px !important;
   }
 }
