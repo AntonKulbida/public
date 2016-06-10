@@ -21,25 +21,29 @@ a:hover {
   padding-top: 49px;
 }
 .main-logo .btn {
-  padding: 5px 18px;
   background-color: #243173;
   color: #fff;
   border-radius: 20px;
   border: 1px solid;
+  width: 93px;
 }
 .main-logo .btn:focus {
   color: #fff;
+  width: 110px;
   border: 0px solid #fff;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   background-color: #243173;
 }
 .main-logo .btn span {
-  margin-left: 40px;
+  margin-left: 25px;
 }
 .main-logo .dropdown-menu {
   border: 1px;
   margin-left: 0px;
+  width: 110px;
+  padding-top: 5px;
+  font-family: 'helveticaneuecyr-thin', sans-serif;
 }
 .main-logo .social-networking .networking ul {
   margin-top: 50px;
