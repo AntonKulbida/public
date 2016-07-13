@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map with weather</title>
+    <style>
+        #map {
+            width: 100%;
+            min-height: 600px;
+        }
+        </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="capture"></div>
+
+
+<script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 6,
+            center: {lat: 49.00, lng: 32.00}
+        });
+
+        var modal = document.getElementById('modal'),
+            res,
+            markerCoord,
+            marker,
+            markersArray = [],
+            infowindow,
+            contentString,
+            xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+
+        google.maps.event.addListener(map, 'click', function (e) {
+
+            markerCoord = {lat: e.latLng.lat(), lng: e.latLng.lng()};
+            makeMarker();
+
+            // Get ajax call to get weather info
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
+                    if (xmlhttp.status == 200) {
+                        res = JSON.parse(xmlhttp.responseText);
+                        openModal(res);
+                    }
+                    else if (xmlhttp.status == 400) {
+                        console.log('There was an error 400');
+                    }
+                    else {
+                        console.log('something else other than 200 was returned');
+                    }
+                }
+            };
+
+            xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?lat=" + markerCoord.lat + "&lon=" + markerCoord.lng + '&apiKey=695fe394bf9cf33b08e84c445b10fedb&lang=ru', true);
+            xmlhttp.send();
+        });
+
+        // Make clear all old markers and add new one
+        function makeMarker() {
+            for (var i in markersArray) {
+                markersArray[i].setMap(null);
+            }
+            markersArray.length = 0;
+
+            marker = new google.maps.Marker({
+                position: markerCoord,
+                map: map,
+                title: 'Weather here'
+            });
+            markersArray.push(marker);
+        }
+
+        function openModal(res) {
+            contentString = '<div id="content">'+
+                    '<div id="siteNotice">'+
+                    '</div>'+
+                    '<div><b>Place:</b> <span id="place">' + res.name + '</span></div>'+
+                    '<p><b>Weather:</b> <span id="weather">' + res.weather[0].main + '</span></p>'+
+                    '</div>';
+
+            infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            infowindow.open(map, marker);
+        }
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtbipJZ5xVRHKdU1L7_tPgPidb3OEDsik&callback=initMap">
+</script>
+</body>
+</html>
