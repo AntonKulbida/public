@@ -6,8 +6,9 @@
     <style>
         #map {
             width: 100%;
-            min-height: 600px;
+            min-height: 650px;
         }
+
         </style>
 </head>
 <body>
@@ -52,7 +53,7 @@
                 }
             };
 
-            xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?lat=" + markerCoord.lat + "&lon=" + markerCoord.lng + '&apiKey=695fe394bf9cf33b08e84c445b10fedb&lang=ru', true);
+            xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?lat=" + markerCoord.lat + "&lon=" + markerCoord.lng + '&apiKey=05d1a9582076e6fecf5c7a3a363b8328', true);
             xmlhttp.send();
         });
 
@@ -75,8 +76,13 @@
             contentString = '<div id="content">'+
                     '<div id="siteNotice">'+
                     '</div>'+
-                    '<div><b>Place:</b> <span id="place">' + res.name + '</span></div>'+
+                    '<div><b>Place: </b><span id="place"> ' + res.name + '</span> </div>'+
                     '<p><b>Weather:</b> <span id="weather">' + res.weather[0].main + '</span></p>'+
+                    '<p><b>Temp:</b> <span id="temp">' + res.main.temp + '</span>&#176 K</p>'+
+                    '<p><b>Wind speed:</b> <span id="wind">' + res.wind.speed + '</span> ms</p>'+ 
+                    '<p><b>Humidity:</b> <span id="humidity">' + res.main.humidity + '</span>%</p>'+ 
+                    '<p><b>T:</b> <span id="t">' + res.main[0] + '</span></p>'+ 
+                    
                     '</div>';
 
             infowindow = new google.maps.InfoWindow({
@@ -89,7 +95,7 @@
 </script>
 
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtbipJZ5xVRHKdU1L7_tPgPidb3OEDsik&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV_7vFCk0ri3mP6Mzd9UXUhGHW5UvAbWs&callback=initMap">
 </script>
 </body>
 </html>
