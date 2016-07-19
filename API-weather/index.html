@@ -6,7 +6,7 @@
     <style>
         #map {
             width: 100%;
-            min-height: 650px;
+            min-height: 920px;
         }
 
         </style>
@@ -73,15 +73,19 @@
         }
 
         function openModal(res) {
-            contentString = '<div id="content">'+
-                    '<div id="siteNotice">'+
-                    '</div>'+
-                    '<div><b>Place: </b><span id="place"> ' + res.name + '</span> </div>'+
-                    '<p><b>Weather:</b> <span id="weather">' + res.weather[0].main + '</span></p>'+
-                    '<p><b>Temp:</b> <span id="temp">' + res.main.temp + '</span>&#176 K</p>'+
-                    '<p><b>Wind speed:</b> <span id="wind">' + res.wind.speed + '</span> ms</p>'+ 
-                    '<p><b>Humidity:</b> <span id="humidity">' + res.main.humidity + '</span>%</p>'+ 
-                    '</div>';
+            if(Object.getOwnPropertyNames(res).length === 0) {
+                contentString = 'To much long, come closer.';
+            } else {
+                contentString = '<div id="content">'+
+                        '<div id="siteNotice">'+
+                        '</div>'+
+                        '<div><b>Place: </b><span id="place"> ' + res.name + '</span> </div>'+
+                        '<p><b>Weather:</b> <span id="weather">' + res.weather[0].main + '</span></p>'+
+                        '<p><b>Temperature:</b> <span id="temperature">' + (res.main.temp - 273.15).toFixed(offset = 0) +'</span>&#176 C</p>'+
+                        '<p><b>Wind speed:</b> <span id="wind">' + res.wind.speed + '</span> ms</p>'+ 
+                        '<p><b>Humidity:</b> <span id="humidity">' + res.main.humidity + '</span>%</p>'+ 
+                        '</div>';
+            }
 
             infowindow = new google.maps.InfoWindow({
                 content: contentString
