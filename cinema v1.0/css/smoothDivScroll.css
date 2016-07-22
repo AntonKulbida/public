@@ -6,7 +6,7 @@ div.scrollingHotSpotLeft
 	/* The hotspots have a minimum width of 100 pixels and if there is room the will grow
     and occupy 15% of the scrollable area (30% combined). Adjust it to your own taste. */
 	min-width: 75px;
-	width: 10%;
+	// width: 10%;
 	height: 100%;
 	/* There is a big background image and it's used to solve some problems I experienced
     in Internet Explorer 6. */
@@ -24,7 +24,8 @@ div.scrollingHotSpotLeft
 div.scrollingHotSpotLeftVisible
 {
 	background-image: url(../images/arrow_left.gif);				
-	background-color: #fff;
+	// background-color: #fff;
+	background-color: #985cb2;
 	background-repeat: no-repeat;
 	opacity: 0.35; /* Standard CSS3 opacity setting */
 	-moz-opacity: 0.35; /* Opacity for really old versions of Mozilla Firefox (0.9 or older) */
@@ -36,7 +37,7 @@ div.scrollingHotSpotLeftVisible
 div.scrollingHotSpotRight
 {
 	min-width: 75px;
-	width: 10%;
+	// width: 10%;
 	height: 100%;
 	background-image: url(../images/big_transparent.gif);
 	background-repeat: repeat;
@@ -51,7 +52,8 @@ div.scrollingHotSpotRight
 div.scrollingHotSpotRightVisible
 {
 	background-image: url(../images/arrow_right.gif);
-	background-color: #fff;
+	// background-color: #fff;
+	background-color: #985cb2;
 	background-repeat: no-repeat;
 	opacity: 0.35;
 	filter: alpha(opacity = 35);
@@ -76,3 +78,17 @@ div.scrollableArea
 	width: auto;
 	height: 100%;
 }
+// div.scrollableArea a{
+// 	border-radius: 10px;
+// 			width: 220px;
+// 			height: 330px;
+// 			position: relative;
+// 			float: left;
+// 			margin-left: 10px;
+// 			padding: 0;
+// 			-webkit-user-select: none;
+// 			-khtml-user-select: none;
+// 			-moz-user-select: none;
+// 			-o-user-select: none;
+// 			user-select: none;
+// }

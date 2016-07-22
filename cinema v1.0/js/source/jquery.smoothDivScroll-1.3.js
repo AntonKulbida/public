@@ -74,7 +74,7 @@
 			autoScrollingInterval: 10, // Milliseconds
 
 			// Touch scrolling
-			touchScrolling: false,
+			touchScrolling: true,
 
 			// Easing for when the scrollToElement method is used
 			scrollToAnimationDuration: 1000, // Milliseconds
