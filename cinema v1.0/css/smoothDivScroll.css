@@ -92,7 +92,7 @@ div.scrollableArea
 			height: 330px;
 			position: relative;
 			float: left;
-			margin-left: 4px;
+			// margin-left: 4px;
 			padding: 0;
 			-webkit-user-select: none;
 			-khtml-user-select: none;
@@ -100,18 +100,3 @@ div.scrollableArea
 			-o-user-select: none;
 			user-select: none;
 		}
-
-// div.scrollableArea a{
-// 	border-radius: 10px;
-// 			width: 220px;
-// 			height: 330px;
-// 			position: relative;
-// 			float: left;
-// 			margin-left: 10px;
-// 			padding: 0;
-// 			-webkit-user-select: none;
-// 			-khtml-user-select: none;
-// 			-moz-user-select: none;
-// 			-o-user-select: none;
-// 			user-select: none;
-// }
