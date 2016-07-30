@@ -15,6 +15,10 @@
 .main-top img:hover {
   transform: rotate(1080deg);
 }
+.main-top a {
+  text-decoration: none;
+  color: inherit;
+}
 .main-top h1 {
   padding: 5px 15px;
   cursor: pointer;
@@ -310,7 +314,7 @@
 }
 .main-movie {
   background-color: #131a20;
-  height: 700px;
+  height: auto;
 }
 .main-movie span {
   border: 2px solid;
@@ -387,10 +391,91 @@
   bottom: 1px;
   color: #0875ab;
   margin-left: 70px;
+  margin-top: 50px;
   opacity: 1;
 }
 .main-movie .way {
-  margin-top: 30px;
+  margin: 30px;
+}
+.main-serial {
+  padding-top: 20px;
+  background-color: #2d273f;
+  height: 700px;
+}
+.main-serial span {
+  border: 2px solid;
+  color: #d0d946;
+  background-color: #d0d946;
+  width: 15px;
+  height: 30px;
+  text-shadow: none;
+  margin-right: 5px;
+}
+.main-serial h1 {
+  color: #b6bdda;
+  padding-left: 5px;
+  font-size: 24px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px black;
+}
+.main-serial .scrollingHotSpotLeft {
+  min-width: 50px;
+  height: 130px;
+  opacity: 0.5;
+  margin-top: 95px;
+  border-radius: 10px;
+}
+.main-serial .scrollingHotSpotRight {
+  min-width: 50px;
+  height: 130px;
+  opacity: 0.5;
+  margin-top: 95px;
+  border-radius: 10px;
+}
+.main-serial #makeMeScrollable {
+  background: rgba(0, 0, 0, 0.5);
+  border: 5px solid #2b3139;
+  box-shadow: 7px 16px 6px 2px rgba(0, 0, 0, 0.8);
+  margin-top: 40px;
+}
+.main-serial #makeMeScrollable a {
+  margin-left: 4px;
+}
+.main-serial #makeMeScrollable a img {
+  width: 223px;
+  height: 330px;
+  border-radius: 0px;
+}
+.main-serial #makeMeScrollable a:hover p {
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  margin-top: 210px;
+  padding: 0;
+  border-radius: 0px;
+  opacity: 0.8;
+  transition: .5s;
+}
+.main-serial #makeMeScrollable a:hover p img {
+  transition: 0.5s;
+}
+.main-serial #makeMeScrollable a p {
+  background: rgba(0, 0, 0, 0.5);
+  transition: .5s;
+  position: absolute;
+  z-index: 200;
+  font-size: 30px;
+  width: auto;
+  text-align: center;
+  color: #fff;
+}
+.main-serial #makeMeScrollable a p .fa {
+  position: absolute;
+  z-index: 250px;
+  bottom: 1px;
+  color: #d0d946;
+  margin-left: 70px;
+  opacity: 1;
 }
 @media (max-width: 1200px) {
   .main-top ul {

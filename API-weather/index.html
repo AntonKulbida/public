@@ -72,16 +72,18 @@
             markersArray.push(marker);
         }
 
-        function openModal(res) {
-            if(Object.getOwnPropertyNames(res).length === 0) {
+    function openModal(res) {
+        // var degreez = (res.main.temp - 273.15).toFixed();
+            if (! res.weather) {
                 contentString = 'To much long, come closer.';
             } else {
+              var degreez = (res.main.temp - 273.15).toFixed();
                 contentString = '<div id="content">'+
                         '<div id="siteNotice">'+
                         '</div>'+
-                        '<div><b>Place: </b><span id="place"> ' + res.name + '</span> </div>'+
+                        '<div><b>Place: </b><span id="place"> ' + res.name + '</span> </div>'+  
                         '<p><b>Weather:</b> <span id="weather">' + res.weather[0].main + '</span></p>'+
-                        '<p><b>Temperature:</b> <span id="temperature">' + (res.main.temp - 273.15).toFixed(offset = 0) +'</span>&#176 C</p>'+
+                        '<p><b>Temperature:</b> <span id="temperature">' + degreez + '</span>&#176 C</p>'+
                         '<p><b>Wind speed:</b> <span id="wind">' + res.wind.speed + '</span> ms</p>'+ 
                         '<p><b>Humidity:</b> <span id="humidity">' + res.main.humidity + '</span>%</p>'+ 
                         '</div>';
