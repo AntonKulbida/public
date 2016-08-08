@@ -19,7 +19,7 @@
 
 <script>
     function initMap() {
-        var map = new/*присваиваем новое значение*/ google.maps.Map(document.getElementById/*по айди*/('map'), {
+        var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 6,
             center: {lat: 49.00, lng: 32.00}
         });
@@ -31,17 +31,17 @@
             markersArray = [],
             infowindow,
             contentString,
-            xmlhttp = window.XMLHttpRequest/*дает возможность браузеру делать HTTP-запросы к серверу без перезагрузки страницы*/ ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+            xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
 
-        google.maps.event.addListener/*событие на онклик*/(map, 'click', function (e) {
+        google.maps.event.addListener(map, 'click', function (e) {
 
-            markerCoord = {lat: e.latLng.lat(), lng: e.latLng.lng()};/*широта и долгота*/
+            markerCoord = {lat: e.latLng.lat(), lng: e.latLng.lng()};
             makeMarker();
 
             // Get ajax call to get weather info
-            xmlhttp.onreadystatechange/*обработчик события, которое происходит при каждой смене состояния объекта*/ = function() {
-                if (xmlhttp.readyState/*Текущее состояние объекта (0 — не инициализирован, */ == XMLHttpRequest.DONE ) {
-                    if (xmlhttp.status/*HTTP-статус в виде числа*/ == 200) {
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
+                    if (xmlhttp.status == 200) {
                         res = JSON.parse(xmlhttp.responseText);
                         openModal(res);
                     }
@@ -54,8 +54,8 @@
                 }
             };
 
-            xmlhttp.open/*определяет метод*/("GET", "http://api.openweathermap.org/data/2.5/weather?lat=" + markerCoord.lat + "&lon=" + markerCoord.lng + '&apiKey=05d1a9582076e6fecf5c7a3a363b8328', true);
-            xmlhttp.send/*отправляет*/();
+            xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?lat=" + markerCoord.lat + "&lon=" + markerCoord.lng + '&apiKey=05d1a9582076e6fecf5c7a3a363b8328', true);
+            xmlhttp.send();
         });
 
         // Make clear all old markers and add new one
