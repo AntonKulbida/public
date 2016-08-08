@@ -80,14 +80,14 @@
             } else {
               var degreez = (res.main.temp - 273.15).toFixed();
                 contentString = '<div id="content">'+
-                        '<div id="siteNotice">'+
+                    '<div id="siteNotice">'+
                         '</div>'+
-                        '<div><b>Place: </b><span id="place"> ' + res.name + '</span> </div>'+  
-                        '<p><b>Weather:</b> <span id="weather">' + res.weather[0].main + '</span></p>'+
-                        '<p><b>Temperature:</b> <span id="temperature">' + degreez + '</span>&#176 C</p>'+
-                        '<p><b>Wind speed:</b> <span id="wind">' + res.wind.speed + '</span> ms</p>'+ 
-                        '<p><b>Humidity:</b> <span id="humidity">' + res.main.humidity + '</span>%</p>'+ 
-                        '</div>';
+                        '<div><strong>Place: </strong><span id="place"> ' + res.name + '</span> </div>'+  
+                        '<p><strong>Weather:</strong> <span id="weather">' + res.weather[0].main + '</span></p>'+
+                        '<p><strong>Temperature:</strong> <span id="temperature">' + degreez + '</span>&#176 C</p>'+
+                        '<strong><b>Wind speed:</strong> <span id="wind">' + res.wind.speed + '</span> ms</p>'+ 
+                        '<strong><b>Humidity:</strong> <span id="humidity">' + res.main.humidity + '</span>%</p>'+ 
+                    '</div>';
             }
 
             infowindow = new google.maps.InfoWindow({
