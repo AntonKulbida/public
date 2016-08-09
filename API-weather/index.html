@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Map with weather</title>
     <style>
+    body{
+ /*       margin: 0;
+        padding: 0;*/
+    }
         #map {
             width: 99%;
             min-height: 98%;
@@ -85,8 +89,8 @@
                         '<div><strong>Place: </strong><span id="place"> ' + res.name + '</span> </div>'+  
                         '<p><strong>Weather:</strong> <span id="weather">' + res.weather[0].main + '</span></p>'+
                         '<p><strong>Temperature:</strong> <span id="temperature">' + degreez + '</span>&#176 C</p>'+
-                        '<strong><b>Wind speed:</strong> <span id="wind">' + res.wind.speed + '</span> ms</p>'+ 
-                        '<strong><b>Humidity:</strong> <span id="humidity">' + res.main.humidity + '</span>%</p>'+ 
+                        '<p><strong>Wind speed:</strong> <span id="wind">' + res.wind.speed + '</span> ms</p>'+ 
+                        '<p><strong>Humidity:</strong> <span id="humidity">' + res.main.humidity + '</span>%</p>'+ 
                     '</div>';
             }
 
