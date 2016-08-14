@@ -5,20 +5,19 @@
     <title>Map with weather</title>
     <style>
     body{
- /*       margin: 0;
-        padding: 0;*/
+        margin: 0;
+        padding: 0;
     }
         #map {
-            width: 99%;
-            min-height: 98%;
+            width: 100%;
+            min-height: 100%;
             position: absolute;
         }
-
         </style>
 </head>
 <body>
     <div id="map"></div>
-    <div class="capture"></div>
+    <!-- <div class="capture"></div> -->
 
 
 <script>
@@ -27,20 +26,17 @@
             zoom: 6,
             center: {lat: 49.00, lng: 32.00}
         });
-
         var modal = document.getElementById('modal'),
             res,
             markerCoord,
             marker,
-            markersArray = [],
-            infowindow,
+            infowindow = new google.maps.InfoWindow(),
             contentString,
             xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
 
-        google.maps.event.addListener(map, 'click', function (e) {
-
-            markerCoord = {lat: e.latLng.lat(), lng: e.latLng.lng()};
-            makeMarker();
+             google.maps.event.addListener(map, 'click', function (e) {
+                 markerCoord = {lat: e.latLng.lat(), lng: e.latLng.lng()};
+                 makeMarker();
 
             // Get ajax call to get weather info
             xmlhttp.onreadystatechange = function() {
@@ -57,26 +53,19 @@
                     }
                 }
             };
-
             xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?lat=" + markerCoord.lat + "&lon=" + markerCoord.lng + '&apiKey=05d1a9582076e6fecf5c7a3a363b8328', true);
             xmlhttp.send();
         });
+     
 
-        // Make clear all old markers and add new one
-        function makeMarker() {
-            for (var i in markersArray) {
-                markersArray[i].setMap(null);
-            }
-            markersArray.length = 0;
-
-            marker = new google.maps.Marker({
+ function makeMarker() {
+    return marker ? marker.setPosition(markerCoord) : marker = new google.maps.Marker({
                 position: markerCoord,
                 map: map,
                 title: 'Weather here'
             });
-            markersArray.push(marker);
-        }
-
+}
+     
     function openModal(res) {
         // var degreez = (res.main.temp - 273.15).toFixed();
             if (! res.weather) {
@@ -94,11 +83,9 @@
                     '</div>';
             }
 
-            infowindow = new google.maps.InfoWindow({
-                content: contentString
-            });
-
-            infowindow.open(map, marker);
+        infowindow.close();
+        infowindow.setContent(contentString);
+        infowindow.open(map, marker);
         }
     }
 </script>
