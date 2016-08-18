@@ -17,8 +17,6 @@
 </head>
 <body>
     <div id="map"></div>
-    <!-- <div class="capture"></div> -->
-
 
 <script>
     function initMap() {
@@ -26,7 +24,7 @@
             zoom: 6,
             center: {lat: 49.00, lng: 32.00}
         });
-        var modal = document.getElementById('modal'),
+        var modal,
             res,
             markerCoord,
             marker,
@@ -67,7 +65,6 @@
 }
      
     function openModal(res) {
-        // var degreez = (res.main.temp - 273.15).toFixed();
             if (! res.weather) {
                 contentString = 'To much long, come closer.';
             } else {
