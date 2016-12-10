@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cinema</title>
+
+	<script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link
+    href='https://fonts.googleapis.com/css?family=Ubuntu:400,500'
+    rel='stylesheet'
+    type='text/css'>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/smoothDivScroll.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" > -->
+
+    <link rel="stylesheet" href="popular-films/css/slick-style.css">
+    <link rel="stylesheet" href="popular-films/slick/slick.css">
+    <link rel="stylesheet" href="popular-films/slick/slick-theme.css">
+    <link rel="stylesheet" href="trailer/css/tr.css">
+    <link rel="stylesheet" href="trailer/css/slick.css">
+    <link rel="stylesheet" href="trailer/css/slick-theme.css">
+    <link rel="stylesheet" href="news/style.css" type="text/css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="search/search.css">
+    <link rel="stylesheet" href="slfilm/css/slick-style.css">
+    <link rel="stylesheet" href="slfilm/slick/slick.css">
+    <link rel="stylesheet" href="slfilm/slick/slick-theme.css">
+    <link rel="stylesheet" href="newfilm/css/slick-style.css">
+    <link rel="stylesheet" href="newfilm/slick/slick.css">
+    <link rel="stylesheet" href="newfilm/slick/slick-theme.css">
+    <link rel="stylesheet" href="newserial/css/slick-style.css">
+    <link rel="stylesheet" href="newserial/slick/slick.css">
+    <link rel="stylesheet" href="newserial/slick/slick-theme.css">
+    <link rel="stylesheet" href="newtvshow/css/slick-style.css">
+    <link rel="stylesheet" href="newtvshow/slick/slick.css">
+    <link rel="stylesheet" href="newtvshow/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="menu_accordeon/style.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="menu_accordeon/vertical-sliding-menu-described/js/jquery-latest.js"></script>
+
+</head>
+<body>
+
+	<div class="main-top">
+        <div class="container top">
+            <div class="row">
+               <div class="col-md-12 col-sm-12 col-xs-12 ">
+                   <div class="col-md-1 col-sm-1 col-xs-2 col-md-offset-0 col-sm-offset-2">
+                       <!-- <img src="img/logo.png" alt="logo"> -->
+                   </div>
+                   <div class="col-md-2 col-sm-2 col-xs-7 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
+                      <h1><a href="#">MFroomm</a></h1>
+                  </div>
+                  <div class="text-center col-md-9 col-sm-11 col-xs-11 col-sm-offset-0 ">
+                   <ul>
+                       <li class="orange" ><a href="#"><p>ГЛАВНАЯ</p></a><hr></li>
+                       <li class="green"><a href="./film.html"><p>ФИЛЬМЫ<hr></p></a></li>
+                       <li  class="yellow"><a href="./serial.html"><p>СЕРИАЛЫ<hr></p></a></li>
+                       <li class="purple"><a href="./tvshow.html"><p>ТВ-ШОУ<hr></p></a></li>
+                       <li class="blue"><a href="#"><p>ЖАНРЫ<hr></p></a></li>
+
+                       <li class="red"><a href="#"><p>КАЧЕСТВО<hr></p></a></li>
+
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<div class="social-network">
+   <div class="container network">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 ">
+         <div class="social col-md-5 col-sm-9 col-sm-offset-3 col-xs-9 col-xs-offset-2 fa-2x">
+            <ul>
+                <li><a href="https://new.vk.com/"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+                <li><a href="commingsoon.html"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="./commingsoon.html"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="./commingsoon.html"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class=" col-md-4 col-md-offset-2 col-sm-4 col-xs-4 ">
+            <div class="container-1">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input type="search" id="search" placeholder="Поиск..." />
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="popular-films">
+   <div class="container films">
+      <div class="row">
+         <div class="col-md-12 col-sm-12 col-xs-12 ">
+             <div class="col-md-0 col-sm-1 col-xs-1 ">
+                <!-- <hr> -->
+            </div>
+            <h1><span>|</span>ПОПУЛЯРНЫЕ ФИЛЬМЫ</h1>
+            <!-- <div class="main"> -->
+            <div class="sl">
+                <div class="sl__slide">
+                    <img src="images/1.jpg" alt="" class="sl__img" images="">
+                    <div class="sl__text">
+                        <h4 class="sl__zag">Слайд 1</h4>
+                    </div>
+                </div>
+                <div class="sl__slide">
+                    <img src="images/2.jpg" alt="" class="sl__img" images="">
+                    <div class="sl__text">
+                        <h4 class="sl__zag">Слайд 2</h4>
+                    </div>
+                </div>
+                <div class="sl__slide">
+                    <img src="images/3.jpg" alt="" class="sl__img" images="">
+                    <div class="sl__text">
+                        <h4 class="sl__zag">Слайд 3</h4>
+                    </div>
+                </div>
+                <div class="sl__slide">
+                    <img src="images/4.jpg" alt="" class="sl__img" images="">
+                    <div class="sl__text">
+                        <h4 class="sl__zag">Слайд 4</h4>
+                    </div>
+                </div>
+                <div class="sl__slide">
+                    <img src="images/5.jpg" alt="" class="sl__img" images="">
+                    <div class="sl__text">
+                        <h4 class="sl__zag">Слайд 5</h4>
+                    </div>
+                </div>
+                <div class="sl__slide">
+                    <img src="images/6.jpg" alt="" class="sl__img" images="">
+                    <div class="sl__text">
+                        <h4 class="sl__zag">Слайд 6</h4>
+                    </div>
+                </div>
+                <div class="sl__slide">
+                    <img src="images/7.jpg" alt="" class="sl__img" images="">
+                    <div class="sl__text">
+                        <h4 class="sl__zag">Слайд 7</h4>
+                    </div>
+                </div>
+                <div class="sl__slide">
+                    <img src="images/8.jpg" alt="" class="sl__img" images="">
+                    <div class="sl__text">
+                        <h4 class="sl__zag">Слайд 8</h4>
+                    </div>
+                </div>
+                <div class="sl__slide">
+                    <img src="images/9.jpg" alt="" class="sl__img" images="">
+                    <div class="sl__text">
+                        <h4 class="sl__zag">Слайд 9</h4>
+                    </div>
+                </div>
+                <div class="sl__slide">
+                    <img src="images/10.jpg" alt="" class="sl__img" images="">
+                    <div class="sl__text">
+                        <h4 class="sl__zag">Слайд 10</h4>
+                    </div>
+                </div>
+            </div>  	
+            <!--   </div> -->
+            <!-- Конец кода -->
+            <!-- Подключаем скрипты -->
+            <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+            <script src="popular-films/slick/slick.js"></script>
+            <script src="popular-films/js/js.js"></script>
+        </div>
+    </div>
+</div>
+</div>
+<div class="new-trailer">
+  <div class="container trailer">
+     <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 ">
+            <div class="col-md-5 col-sm-12 col-xs-12 ">
+               <a href="#"><h1><span>|</span>ПОПУЛЯРНЫЕ TRAILERЫ</h1></a>
+               <div class="tr">
+                <div class="tr-slide">
+                 <iframe width="390" height="220" src="https://www.youtube.com/embed/LjoeqX7kirM" frameborder="0" allowfullscreen></iframe>
+                 <div class="tr-text">
+                    <h3 class="tr-zag">Слайд 1</h3>
+                </div>
+            </div>
+            <div class="tr-slide">
+             <iframe width="390" height="220" src="https://www.youtube.com/embed/ei1LC8bZ-BU" frameborder="0" allowfullscreen></iframe>
+             <div class="tr-text">
+                <h3 class="tr-zag">Слайд 2</h3>
+            </div>
+        </div>
+        <div class="tr-slide">
+            <iframe width="390" height="220" src="https://www.youtube.com/embed/ei1LC8bZ-BU" frameborder="0" allowfullscreen></iframe>
+            <div class="tr-text">
+                <h3 class="tr-zag">Слайд 3</h3>
+            </div>
+        </div>
+        <div class="tr-slide">
+            <iframe  width="390" height="220" src="trailer/images/tr4.jpg" frameborder="0" allowfullscreen></iframe>
+            <div class="tr-text">
+                <h3 class="tr-zag">Слайд 4</h3>
+            </div>
+        </div>
+        <div class="tr-slide">
+            <iframe  width="390" height="220" src="trailer/images/tr5.jpg" frameborder="0" allowfullscreen></iframe>
+            <div class="tr-text">
+                <h3 class="tr-zag">Слайд 5</h3>
+            </div>
+        </div>
+    </div>  	
+    
+    <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="trailer/slick/slick.js"></script>
+    <script src="trailer/js/tr.js"></script>
+</div>
+
+<div class="col-md-5 col-sm-12 col-xs-12 text">
+    <a href="#"><h1 ><span style="color: #fff; background-color: #fff;" >|</span>НОВОСТИ КИНО</h1></a>
+
+    <div class="box">
+        <div class="news1">
+            <a href="mfromm.ru" class="link">
+                <img src="img/logo.png" alt="" class="img" images="">
+                <div class="bl">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                </div></a>
+                <div class="bl_text">
+                    <h2 class="bl_zag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quos.</h2>
+                </div>
+            </div>
+            <div class="news1">
+                <a href="mfromm.ru" class="link">
+                    <img src="img/photo3.jpg" alt="" class="img" images="">
+                    <div class="bl">
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </div></a>
+                    <div class="bl_text">
+                        <h2 class="bl_zag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quos.</h2>
+                    </div>
+                </div>
+                <div class="news1">
+                    <a href="mfromm.ru" class="link">
+                        <img src="img/photo2.jpg" alt="" class="img" images="">
+                        <div class="bl">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </div></a>
+                        <div class="bl_text">
+                            <h2 class="bl_zag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quos.</h2>
+                        </div>
+                    </div>
+                    <div class="news1">
+                        <a href="mfromm.ru" class="link">
+                            <img src="img/photo.jpg" alt="" class="img" images="">
+                            <div class="bl">
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </div></a>
+                            <div class="bl_text">
+                                <h2 class="bl_zag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quos.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-0 col-sm-9 col-sm-offset-3 col-xs-9 col-xs-offset-2 fa-2x">
+                    
+                    <!-- Начало кода -->
+                    <div class="box-sl">
+                      <a href="#"><h1><span style="color: #00aaef; background-color: #00aaef;" >|</span>Случайный фильм</h1></a>
+                      <!-- <div class="main"> -->
+                      <div class="sl6">
+                        <div class="sl6__slide">
+                            <img src="images/12.JPG" alt="" class="sl__img" images="">
+                            <div class="sl6__text">
+                                <h3 class="sl6__zag">Слайд 1</h3>
+                            </div>
+                        </div>
+                        <div class="sl6__slide">
+                            <img src="images/10.JPG" alt="" class="sl__img" images="">
+                            <div class="sl6__text">
+                                <h3 class="sl6__zag">Слайд 2</h3>
+                            </div>
+                        </div>
+                        <div class="sl6__slide">
+                            <img src="images/13.JPG" alt="" class="sl__img" images="">
+                            <div class="sl6__text">
+                                <h3 class="sl6__zag">Слайд 3</h3>
+                            </div>
+                        </div>
+                        <div class="sl6__slide">
+                            <img src="images/15.JPG" alt="" class="sl__img" images="">
+                            <div class="sl6__text">
+                                <h3 class="sl6__zag">Слайд 4</h3>
+                            </div>
+                        </div>
+                        <div class="sl6__slide">
+                            <img src="images/20.JPG" alt="" class="sl__img" images="">
+                            <div class="sl6__text">
+                                <h3 class="sl6__zag">Слайд 5</h3>
+                            </div>
+                        </div>
+                    </div>      
+                    <!-- </div> -->
+                </div>
+                
+                <!-- Конец кода -->
+                <!-- Подключаем скрипты -->
+                <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+                <script src="slfilm/slick/slick.js"></script>
+                <script src="slfilm/js/js.js"></script>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="main-movie">
+  <div class="container movie">
+     <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-10 col-sm-10 col-xs-10">
+                <a href="#"><h1><span>|</span>НОВЫЕ ФИЛЬМЫ</h1></a>
+                <div class="main">
+                  <div class="sl3">
+                    <div class="sl3__slide">
+                        <img src="images/10.JPG" alt="" class="sl3__img" images="">
+                        <div class="sl3__text">
+                            <h3 class="sl3__zag">Слайд 1</h3>
+                        </div>
+                    </div>
+                    <div class="sl3__slide">
+                        <img src="images/11.JPG" alt="" class="sl3__img" images="">
+                        <div class="sl3__text">
+                            <h3 class="sl3__zag">Слайд 2</h3>
+                        </div>
+                    </div>
+                    <div class="sl3__slide">
+                        <img src="images/12.JPG" alt="" class="sl3__img" images="">
+                        <div class="sl3__text">
+                            <h3 class="sl3__zag">Слайд 3</h3>
+                        </div>
+                    </div>
+                    <div class="sl3__slide">
+                        <img src="images/13.JPG" alt="" class="sl3__img" images="">
+                        <div class="sl3__text">
+                            <h3 class="sl3__zag">Слайд 4</h3>
+                        </div>
+                    </div>
+                    <div class="sl3__slide">
+                        <img src="images/14.JPG" alt="" class="sl3__img" images="">
+                        <div class="sl3__text">
+                            <h3 class="sl3__zag">Слайд 5</h3>
+                        </div>
+                    </div>
+                    <div class="sl3__slide">
+                        <img src="images/15.JPG" alt="" class="sl3__img" images="">
+                        <div class="sl3__text">
+                            <h3 class="sl3__zag">Слайд 6</h3>
+                        </div>
+                    </div>
+                    <div class="sl3__slide">
+                        <img src="images/16.JPG" alt="" class="sl3__img" images="">
+                        <div class="sl3__text">
+                            <h3 class="sl3__zag">Слайд 7</h3>
+                        </div>
+                    </div>
+                    <div class="sl3__slide">
+                        <img src="images/17.JPG" alt="" class="sl3__img" images="">
+                        <div class="sl3__text">
+                            <h3 class="sl3__zag">Слайд 8</h3>
+                        </div>
+                    </div>
+                    <div class="sl3__slide">
+                        <img src="images/18.JPG" alt="" class="sl3__img" images="">
+                        <div class="sl3__text">
+                            <h3 class="sl3__zag">Слайд 9</h3>
+                        </div>
+                    </div>
+                    <div class="sl3__slide">
+                        <img src="images/19.JPG" alt="" class="sl3__img" images="">
+                        <div class="sl3__text">
+                            <h3 class="sl3__zag">Слайд 10</h3>
+                        </div>
+                    </div>
+                    <div class="sl3__slide">
+                        <img src="images/20.JPG" alt="" class="sl__img" images="">
+                        <div class="sl3__text">
+                            <h3 class="sl3__zag">Слайд 10</h3>
+                        </div>
+                    </div>
+                    <div class="sl3__slide">
+                        <img src="images/10.JPG" alt="" class="sl3__img" images="">
+                        <div class="sl3__text">
+                            <h3 class="sl3__zag">Слайд 12</h3>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <!-- Конец кода -->
+            <!-- Подключаем скрипты -->
+            <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+            <script src="newfilm/slick/slick.js"></script>
+            <script src="newfilm/js/js.js"></script>
+
+        </div>
+        <div class="col-md-2 col-sm-12 col-xs-12">
+            <div id="menu_pop">
+
+                <ul id="accordion">
+                   <li><div class = "rang">РЕЙТИНГОВОЕ</div>
+
+                       <ul class= "qwe">
+                           <li><img src="images/1.jpg" alt="">
+                            <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                            <h4> <a href="#">жанр</a></h4>
+                            <h4> <a href="#">ужасы</a></h4> </li>
+                            
+                            <li class="bl-1"><img src="images/2.jpg" alt="">
+                               <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                               <h4> <a href="#">жанр</a></h4>
+                               <h4> <a href="#">ужасы</a></h4> </li>
+                               
+                               <li class="bl-1"><img src="images/3.jpg" alt="">
+                                   <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                   <h4> <a href="#">жанр</a></h4>
+                                   <h4> <a href="#">ужасы</a></h4> </li>
+                                   
+                                   <li class="bl-1"><img src="images/4.jpg" alt="">
+                                       <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                       <h4> <a href="#">жанр</a></h4>
+                                       <h4> <a href="#">ужасы</a></h4> </li>
+                                   </ul>
+                               </li>
+
+                               <li><div class = "comm">КОММЕНТИРУЕМОЕ<br></div>
+                                   <ul class= "qwe">
+                                       <li><img src="images/21.jpg" alt="">
+                                        <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                        <h4> <a href="#">жанр</a></h4>
+                                        <h4> <a href="#">ужасы</a></h4> </li>
+                                        
+                                        <li class="bl-1"><img src="images/22.jpg" alt="">
+                                           <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                           <h4> <a href="#">жанр</a></h4>
+                                           <h4> <a href="#">ужасы</a></h4> </li>
+                                           
+                                           <li class="bl-1"><img src="images/23.jpg" alt="">
+                                               <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                               <h4> <a href="#">жанр</a></h4>
+                                               <h4> <a href="#">ужасы</a></h4> </li>
+                                               
+                                               <li class="bl-1"><img src="images/24.jpg" alt="">
+                                                   <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                                   <h4> <a href="#">жанр</a></h4>
+                                                   <h4> <a href="#">ужасы</a></h4> </li>
+                                               </ul>
+                                           </li>
+                                           <li><div class = "see">ПРОСМАТРИВАЕМОЕ <!-- <i class="fa fa-plus" aria-hidden="true fa-lg" ></i> <i class="fa fa-minus" aria-hidden="true"></i> --><br></div>
+                                               <ul class= "qwe">
+                                                   <li><img src="images/11.jpg" alt="">
+                                                    <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                                    <h4> <a href="#">жанр</a></h4>
+                                                    <h4> <a href="#">ужасы</a></h4> </li>
+                                                    
+                                                    <li class="bl-1"><img src="images/12.jpg" alt="">
+                                                       <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                                       <h4> <a href="#">жанр</a></h4>
+                                                       <h4> <a href="#">ужасы</a></h4> </li>
+                                                       
+                                                       <li class="bl-1"><img src="images/13.jpg" alt="">
+                                                           <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                                           <h4> <a href="#">жанр</a></h4>
+                                                           <h4> <a href="#">ужасы</a></h4> </li>
+                                                           
+                                                           <li class="bl-1"><img src="images/14.jpg" alt="">
+                                                               <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                                               <h4> <a href="#">жанр</a></h4>
+                                                               <h4> <a href="#">ужасы</a></h4> </li>
+                                                           </ul>
+                                                       </li>
+                                                   </ul>
+
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           
+                           <div class="main-serial">
+                              <div class="container serial">
+                                 <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-md-10 col-sm-12 col-xs-12">
+                                            <a href="#"><h1><span>|</span>НОВЫЕ СЕРИАЛЫ</h1></a>
+                                            <!-- Начало кода -->
+                                            <div class="main">
+                                              <div class="sl4">
+                                                <div class="sl4__slide">
+                                                    <img src="images/21.JPG" alt="" class="sl__img" images="">
+                                                    <div class="sl4__text">
+                                                        <h3 class="sl4__zag">Слайд 1</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sl4__slide">
+                                                    <img src="images/22.JPG" alt="" class="sl__img" images="">
+                                                    <div class="sl4__text">
+                                                        <h3 class="sl4__zag">Слайд 2</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sl4__slide">
+                                                    <img src="images/23.JPG" alt="" class="sl__img" images="">
+                                                    <div class="sl4__text">
+                                                        <h3 class="sl4__zag">Слайд 3</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sl4__slide">
+                                                    <img src="images/24.JPG" alt="" class="sl__img" images="">
+                                                    <div class="sl4__text">
+                                                        <h3 class="sl4__zag">Слайд 4</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sl4__slide">
+                                                    <img src="images/26.JPG" alt="" class="sl__img" images="">
+                                                    <div class="sl4__text">
+                                                        <h3 class="sl4__zag">Слайд 5</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sl4__slide">
+                                                    <img src="images/27.JPG" alt="" class="sl__img" images="">
+                                                    <div class="sl4__text">
+                                                        <h3 class="sl4__zag">Слайд 6</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sl4__slide">
+                                                    <img src="images/28.JPG" alt="" class="sl__img" images="">
+                                                    <div class="sl4__text">
+                                                        <h3 class="sl4__zag">Слайд 7</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sl4__slide">
+                                                    <img src="images/29.JPG" alt="" class="sl__img" images="">
+                                                    <div class="sl4__text">
+                                                        <h3 class="sl4__zag">Слайд 8</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sl4__slide">
+                                                    <img src="images/30.JPG" alt="" class="sl__img" images="">
+                                                    <div class="sl4__text">
+                                                        <h3 class="sl4__zag">Слайд 9</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sl4__slide">
+                                                    <img src="images/31.JPG" alt="" class="sl__img" images="">
+                                                    <div class="sl4__text">
+                                                        <h3 class="sl4__zag">Слайд 10</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sl4__slide">
+                                                    <img src="images/32.JPG" alt="" class="sl__img" images="">
+                                                    <div class="sl4__text">
+                                                        <h3 class="sl4__zag">Слайд 10</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sl4__slide">
+                                                    <img src="images/33.JPG" alt="" class="sl__img" images="">
+                                                    <div class="sl4__text">
+                                                        <h3 class="sl4__zag">Слайд 12</h3>
+                                                    </div>
+                                                </div>
+                                            </div>      
+                                        </div>
+                                        
+                                        <!-- Конец кода -->
+                                        <!-- Подключаем скрипты -->
+                                        <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+                                        <script src="newserial/slick/slick.js"></script>
+                                        <script src="newserial/js/js.js"></script>
+                                    </div>
+                                    <div class="col-md-2 col-sm-12 col-xs-12">
+                                        <!-- <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, nulla.</h1> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-tvshow">
+                        <div class="container tvshow">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <a href="#"><h1><span>|</span>НОВЫЕ ТЕЛЕПЕРЕДАЧИ</h1></a>
+
+                                        <!-- Начало кода -->
+                                        <div class="main">
+                                          <div class="sl5">
+                                            <div class="sl5__slide">
+                                                <img src="images/1.jpg" alt="" class="sl__img" images="">
+                                                <div class="sl5__text">
+                                                    <h3 class="sl5__zag">Слайд 1</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sl5__slide">
+                                                <img src="images/2.jpg" alt="" class="sl__img" images="">
+                                                <div class="sl5__text">
+                                                    <h3 class="sl5__zag">Слайд 2</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sl5__slide">
+                                                <img src="images/3.jpg" alt="" class="sl__img" images="">
+                                                <div class="sl5__text">
+                                                    <h3 class="sl__zag">Слайд 3</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sl5__slide">
+                                                <img src="images/4.jpg" alt="" class="sl__img" images="">
+                                                <div class="sl5__text">
+                                                    <h3 class="sl5__zag">Слайд 4</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sl5__slide">
+                                                <img src="images/5.jpg" alt="" class="sl__img" images="">
+                                                <div class="sl5__text">
+                                                    <h3 class="sl5__zag">Слайд 5</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sl5__slide">
+                                                <img src="images/6.jpg" alt="" class="sl__img" images="">
+                                                <div class="sl5__text">
+                                                    <h3 class="sl5__zag">Слайд 6</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sl5__slide">
+                                                <img src="images/7.jpg" alt="" class="sl__img" images="">
+                                                <div class="sl5__text">
+                                                    <h3 class="sl__zag">Слайд 7</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sl5__slide">
+                                                <img src="images/8.jpg" alt="" class="sl__img" images="">
+                                                <div class="sl5__text">
+                                                    <h3 class="sl5__zag">Слайд 8</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sl5__slide">
+                                                <img src="images/9.jpg" alt="" class="sl__img" images="">
+                                                <div class="sl5__text">
+                                                    <h3 class="sl5__zag">Слайд 9</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sl5__slide">
+                                                <img src="images/10.jpg" alt="" class="sl__img" images="">
+                                                <div class="sl5__text">
+                                                    <h3 class="sl5__zag">Слайд 10</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sl5__slide">
+                                                <img src="images/11.jpg" alt="" class="sl__img" images="">
+                                                <div class="sl5__text">
+                                                    <h3 class="sl5__zag">Слайд 11</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sl5__slide">
+                                                <img src="images/12.jpg" alt="" class="sl__img" images="">
+                                                <div class="sl5__text">
+                                                    <h3 class="sl5__zag">Слайд 12</h3>
+                                                </div>
+                                            </div>
+                                        </div>      
+                                    </div>
+                                    <!-- Конец кода -->
+                                    <!-- Подключаем скрипты -->
+                                    <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+                                    <script src="newtvshow/slick/slick.js"></script>
+                                    <script src="newtvshow/js/js.js"></script>
+                                </div>
+                                <div class="col-md-2 col-sm-12 col-xs-12">
+                                    <!-- <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, nulla.</h1> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="main-footer">
+                  <div class="container footer">
+                     <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                           <div class="col-md-1 col-sm-1 col-xs-2 col-md-offset-0 ">
+                               <!-- <img src="img/logo.png" alt="logo"> -->
+                           </div>
+                           <div class="col-md-2 col-sm-1 col-xs-2 col-md-offset-0 col-sm-offset-0">
+                              <h1><a href="#">MFroomm</a></h1>
+                          </div>
+                          <div class="col-md-6 col-sm-7 col-xs-12 col-md-offset-0 col-sm-offset-3">
+                              <ul>
+                                 <a href="#"><li>Раздел1</li></a>
+                                 <a href="#"><li>Раздел2</li></a>
+                                 <a href="#"><li>Раздел3</li></a>
+                                 <a href="#"><li>Раздел4</li></a>
+                                 <a href="#"><li>Раздел5</li></a>
+                                 <a href="#"><li>Раздел6</li></a>
+                                 <a href="#"><li>Раздел7</li></a>
+                                 <a href="#"><li>Раздел8</li></a>
+                                 <a href="#"><li>Раздел9</li></a>
+                                 <a href="#"><li>Раздел0</li></a>
+                             </ul>
+                         </div>
+                         <div class="banner text-center col-md-3 col-sm-3">
+                           <img src="" alt="">
+                           <p>banner post</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       
+   </body>
+
+   <script>
+
+    $("#accordion > li > div").click(function(){
+        if(false == $(this).next().is(':visible')) {
+            $('#accordion ul').slideUp(380);
+        }
+        $(this).next().slideToggle(380);
+    });
+</script>
+
+</html>

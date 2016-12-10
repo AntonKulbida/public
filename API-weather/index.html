@@ -5,42 +5,47 @@
     <title>Map with weather</title>
     <style>
     body{
-        margin: 0;
-        padding: 0;
+ /*       margin: 0;
+        padding: 0;*/
     }
         #map {
-            width: 100%;
-            min-height: 100%;
+            width: 99%;
+            min-height: 98%;
             position: absolute;
         }
         </style>
 </head>
 <body>
     <div id="map"></div>
+    <div class="capture"></div>
+
 
 <script>
     function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var map = new /*присваиваем новое значение Создаёт экземпляр объекта определённого пользователем типа или одного из встроенных типов.*/ google.maps.Map(document.getElementById/*по айди*/('map'), {
             zoom: 6,
             center: {lat: 49.00, lng: 32.00}
         });
-        var modal,
+
+        var modal = document.getElementById('modal'),
             res,
             markerCoord,
             marker,
-            infowindow = new google.maps.InfoWindow(),
+            markersArray = [],
+            infowindow,
             contentString,
-            xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+            xmlhttp = window.XMLHttpRequest/*дает возможность браузеру делать HTTP-запросы к серверу без перезагрузки страницы*/ ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
 
-             google.maps.event.addListener(map, 'click', function (e) {
-                 markerCoord = {lat: e.latLng.lat(), lng: e.latLng.lng()};
-                 makeMarker();
+        google.maps.event.addListener/*обработчик событий*/(map, 'click'/*событие на онклик*/, function (e) {
+
+            markerCoord = {lat: e.latLng.lat(), lng: e.latLng.lng()};/*широта и долгота*/
+            makeMarker();
 
             // Get ajax call to get weather info
-            xmlhttp.onreadystatechange = function() {
-                if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
-                    if (xmlhttp.status == 200) {
-                        res = JSON.parse(xmlhttp.responseText);
+            xmlhttp.onreadystatechange/*обработчик события, которое происходит при каждой смене состояния объекта*/ = function() {
+                if (xmlhttp.readyState/*Текущее состояние объекта (0 — не инициализирован, */ == XMLHttpRequest.DONE ) {
+                    if (xmlhttp.status/*HTTP-статус в виде числа Если код ответа сервера не 200, то это ошибка дфлее ее обработать*/  == 200) {
+                        res = JSON.parse(xmlhttp.responseText /*текст ответа сервера*/);
                         openModal(res);
                     }
                     else if (xmlhttp.status == 400) {
@@ -51,20 +56,31 @@
                     }
                 }
             };
-            xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?lat=" + markerCoord.lat + "&lon=" + markerCoord.lng + '&apiKey=05d1a9582076e6fecf5c7a3a363b8328', true);
-            xmlhttp.send();
-        });
-     
 
- function makeMarker() {
-    return marker ? marker.setPosition(markerCoord) : marker = new google.maps.Marker({
+            xmlhttp.open/*определяет метод запроса*/("GET", "http://api.openweathermap.org/data/2.5/weather?lat=" + markerCoord.lat + "&lon=" + markerCoord.lng + '&apiKey=05d1a9582076e6fecf5c7a3a363b8328', true);
+            xmlhttp.send/*отправляет*/();
+        });
+
+        // Make clear all old markers and add new one
+        function makeMarker() {
+       /*Для перебора всех свойств из объекта используется цикл по свойствам for..in. */     
+       for  (var i/*переменная для индексов массива(элементов)*/
+                 in markersArray/*масссив по которому мы прохадимся*/) {
+                markersArray[i] /*Доступ к свойству через переменную*/ .setMap(null);/*Для удаления объектов с карты в API Google Maps  нужно для каждого установить свойство setMap(null).*/
+            }
+            markersArray.length = 0;
+
+                    /*добавляет маркер на карте и нажимает на массив*/
+            marker = new google.maps.Marker({
                 position: markerCoord,
                 map: map,
                 title: 'Weather here'
             });
-}
-     
+            markersArray.push(marker);
+        }
+
     function openModal(res) {
+        // var degreez = (res.main.temp - 273.15).toFixed();
             if (! res.weather) {
                 contentString = 'To much long, come closer.';
             } else {
@@ -79,10 +95,12 @@
                         '<p><strong>Humidity:</strong> <span id="humidity">' + res.main.humidity + '</span>%</p>'+ 
                     '</div>';
             }
+                /*выводит информ окна погоды реc везер*/
+            infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
 
-        infowindow.close();
-        infowindow.setContent(contentString);
-        infowindow.open(map, marker);
+            infowindow.open(map, marker);
         }
     }
 </script>

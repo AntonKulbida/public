@@ -21,7 +21,7 @@
 }
 .main-top h1 {
   padding: 5px 15px;
-  cursor: pointer;
+  cursor: default;
 }
 .main-top h1:hover {
   color: #efad57;
@@ -166,6 +166,7 @@
 }
 .popular-films h1 {
   color: #b6bdda;
+  cursor: move;
   padding-bottom: 20px;
   padding-left: 5px;
   font-size: 24px;
